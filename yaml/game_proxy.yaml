@@ -21,6 +21,7 @@ payload:
   - '+.whoer.net'
   - '+.ipleak.net'
   - '+.browserleaks.com'
+  - '+.ippure.com'
   
   # 韩国通用门户 (Naver)
   - '+.naver.com'
