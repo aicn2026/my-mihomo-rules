@@ -52,6 +52,9 @@ payload:
   #- '+.rr4---sn-3u-bh2sl.gvt1.com'
   - '+.square.pcpf.kakaogames.com'
   - '+.patch.dkbi.kakaogames.com'
+  # Steam
+  - '+.cdn.fastly.steamstatic.com'
+  - '+.steamcontent.com'
   # 三角洲国际服
   - '+.www.playdeltaforce.com'
   - '+.download.dgameglobal.com'
