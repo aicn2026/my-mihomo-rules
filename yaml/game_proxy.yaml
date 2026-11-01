@@ -6,7 +6,8 @@ payload:
   - '+.huaweicloud.com'
   - '+.myhuaweicloud.com'
   - '+.nodeseek.com'
-  
+  - '+.cloudflare.com'
+
   # 国外网络检测 & 测速
   #- '+.ptclspeed.speedtestcustom.com'
   - '+.ip-api.com'
@@ -23,7 +24,7 @@ payload:
   - '+.ipleak.net'
   - '+.browserleaks.com'
   - '+.ippure.com'
-  
+  - '+.ip.net.coffee'
   # 韩国通用门户 (Naver)
   - '+.naver.com'
   - '+.pstatic.net'
