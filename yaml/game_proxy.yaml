@@ -5,6 +5,7 @@ payload:
   - '+.huawei.com'
   - '+.huaweicloud.com'
   - '+.myhuaweicloud.com'
+  - '+.nodeseek.com'
   
   # 国外网络检测 & 测速
   #- '+.ptclspeed.speedtestcustom.com'
