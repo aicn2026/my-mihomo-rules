@@ -1,45 +1,50 @@
 payload:
-  # 自定义直连域名
-  - '+.igame.plus'
-  - '+.aicn.plus'
-  - '+.631518.xyz'
-  # 显卡驱动与硬件服务
-  - '+.nvidia.cn'
-  - '+.nvidia.com'
-  - '+.amd.com'
-  - '+.intel.com'
-  - '+.fsend.cn'              # 测速或文件快传CDN
+  # =========================================
+  # Microsoft / Windows 微软生态 (系统更新、Office、Azure等)
+  # =========================================
+  - '+.azure.cn'               # 微软 Azure 云服务 (中国区)
+  - '+.cn.bing.com'            # 必应搜索 (国内版)
+  - '+.live.com'               # 微软账号登录与基础服务 (Outlook/Live)
+  - '+.microsoft.com'          # 微软主站及核心业务
+  - '+.microsoftonline.com'    # 微软在线服务认证与授权
+  - '+.msauth.net'             # 微软身份验证服务
+  - '+.msn.com'                # MSN 门户与资讯天气等组件
+  - '+.office.com'             # Microsoft Office 办公套件
+  - '+.office365.com'          # Office 365 / Microsoft 365 云服务
+  - '+.sfx.ms'                 # 微软 SharePoint / OneDrive 短链接分发
+  - '+.skype.com'              # Skype 通讯服务
+  - '+.windows.com'            # Windows 系统级服务组件
+  - '+.windows.net'            # Windows 核心网络基础设施
+  - '+.windowsupdate.com'      # Windows 系统补丁与驱动更新下载
 
-  # 微软全家桶与系统更新 (Windows / Office 365)
-  - '+.microsoft.com'
-  - '+.windows.com'
-  - '+.windows.net'
-  - '+.windowsupdate.com'
-  - '+.office365.com'
-  - '+.microsoftonline.com'
-  - '+.live.com'
-  - '+.azure.cn'
-  - '+.cn.bing.com'
-  - '+.msauth.net'
-  - '+.msn.com'
-  - '+.sfx.ms'
-  - '+.office.com'
+  # =========================================
+  # Apple 苹果生态 (iCloud、App Store、静态资源)
+  # =========================================
+  - '+.aaplimg.com'            # 苹果静态图片与内容分发 (iCloud/官网素材)
+  - '+.me.com'                 # 苹果基础账号服务 (iCloud 邮箱等)
+  - '+.mzstatic.com'           # 苹果 App Store/iTunes 静态资源(图标/截图)
 
-  # 苹果基础服务与商店 CDN (Apple)
-  - '+.mzstatic.com'
-  - '+.aaplimg.com'
-  - '+.me.com'
+  # =========================================
+  # PC硬件与驱动更新 (AMD, Intel, NVIDIA)
+  # =========================================
+  - '+.amd.com'                # AMD 官网与显卡/主板驱动下载
+  - '+.intel.com'              # Intel 官网与硬件驱动网络
+  - '+.nvidia.cn'              # NVIDIA 中国官网
+  - '+.nvidia.com'             # NVIDIA 全球官网及 GeForce Experience 更新
 
-  - '+.adtidy.org'            # AdGuard 规则下载
-  - '+.eset.com'              # eset杀毒
-  - '+.eset.systems'
-  - '+.mozilla.com'           # 火狐
-  - '+.mozilla.net'
-  - '+.firefox.com'
-  - '+.njmapp.com'            # 腾讯系后台遥测与日志服务
+  # =========================================
+  # 浏览器与安全防护 (Firefox, ESET)
+  # =========================================
+  - '+.eset.com'               # ESET (NOD32) 杀毒软件主站与验证
+  - '+.eset.systems'           # ESET 病毒库更新与云端查杀系统
+  - '+.firefox.com'            # Firefox 浏览器同步与基础服务
+  - '+.mozilla.com'            # Mozilla 官方网络
+  - '+.mozilla.net'            # Mozilla 扩展商店与底层遥测分发
 
-  # # 真人验证域名
-  # # Cloudflare 人机验证与挑战页面
-  # - '+.challenges.cloudflare.com'
-  # # 亚马逊CDN
-  # - '+.cloudfront.net'
+  # =========================================
+  # 开发者工具、去广告与国内应用服务
+  # =========================================
+  - '+.adtidy.org'             # AdGuard 广告拦截规则库更新
+  - '+.fsend.cn'               # 国内文件传输/分发直连服务
+  - '+.gh-proxy.org'           # GitHub 资源代理加速服务 (国内提速下载)
+  - '+.njmapp.com'             # 国内特定移动端应用/组件服务
