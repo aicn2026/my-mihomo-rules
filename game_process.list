@@ -1,0 +1,166 @@
+### NC韩服 PURPLE
+PROCESS-NAME,PurpleLauncher.exe
+PROCESS-NAME,Uninstall.exe
+PROCESS-NAME,CefSharp.BrowserSubprocess.exe
+PROCESS-NAME,Purple.exe
+PROCESS-NAME,purple-agent.exe
+PROCESS-NAME,MediaRecorder.exe
+PROCESS-NAME,MediaRecorder2.exe
+PROCESS-NAME,NCOverlayAgent32.exe
+PROCESS-NAME,NCOverlayAgent64.exe
+PROCESS-NAME,NCOverlayCefweb32.exe
+PROCESS-NAME,purple-overlay.exe
+PROCESS-NAME,PurpleBox.exe
+PROCESS-NAME,purpleonp.exe
+PROCESS-NAME,logReport_SA.exe
+PROCESS-NAME,purpleon.exe
+# Aion2
+PROCESS-NAME,UEPrereqSetup_x64.exe
+PROCESS-NAME,CrashReportClient.exe
+PROCESS-NAME,CrashReportClientEditor.exe
+PROCESS-NAME,EpicWebHelper.exe
+PROCESS-NAME,Aion2.exe
+# Aion重制版
+PROCESS-NAME,AwesomiumProcess.exe
+PROCESS-NAME,ncdiagS32.exe
+PROCESS-NAME,ncdiagS64.exe
+PROCESS-NAME,SendLogClient.exe
+PROCESS-NAME,AionCefProcess.exe
+PROCESS-NAME,wow_helper.exe
+PROCESS-NAME,aioncefprocess.exe
+PROCESS-NAME,Aion.bin
+# 天堂1怀旧服
+PROCESS-NAME,LC.exe
+# 天堂2
+PROCESS-NAME,LineageII.exe
+PROCESS-NAME,AwesomiumProcess.exe
+PROCESS-NAME,awesomium_process.exe
+PROCESS-NAME,L2CefSubProcess.exe
+PROCESS-NAME,L2CrashSender.exe
+PROCESS-NAME,nclauncher.exe
+PROCESS-NAME,l2.bin
+PROCESS-NAME,aegisty.bin
+
+### STOVE 平台
+PROCESS-NAME,7za.exe
+PROCESS-NAME,crashpad_handler.exe
+PROCESS-NAME,CrashSender1402_vs140.exe
+PROCESS-NAME,GameUninstaller.exe
+PROCESS-NAME,MicrosoftEdgeWebview2Setup.exe
+PROCESS-NAME,SendMessageDuplicateRun.exe
+PROCESS-NAME,STOVE.exe
+PROCESS-NAME,xdelta3-3.1.0-x86_64.exe
+PROCESS-NAME,STOVEUpdater.exe
+PROCESS-NAME,send_remote_log.exe
+PROCESS-NAME,stove_watchdog.exe
+PROCESS-NAME,VC_redist.x64.exe
+PROCESS-NAME,VC_redist.x86.exe
+PROCESS-NAME,LauncherService.exe
+PROCESS-NAME,LauncherServiceMessage.exe
+PROCESS-NAME,StoveCefHelper.exe
+# 日蚀
+PROCESS-NAME,EclipseTheAwakening.exe
+PROCESS-NAME,EclipseTheAwakening-Win64-Shipping.exe
+PROCESS-NAME,vc_redist.arm64.exe
+
+# Google Play 游戏
+PROCESS-NAME,Applicator.26.10.90.0.exe
+PROCESS-NAME,Applicator.26.9.813.1.exe
+PROCESS-NAME,Bootstrapper.exe
+PROCESS-NAME,Uninstaller.exe
+PROCESS-NAME,GooglePlayGamesServices.exe
+PROCESS-NAME,GooglePlayGamesServicesOverlay.exe
+PROCESS-NAME,crashpad_handler.exe
+PROCESS-NAME,GooglePlayGamesServicesUninstaller.exe
+PROCESS-NAME,GooglePlayGamesServicesInstaller.exe
+PROCESS-NAME,client.exe
+PROCESS-NAME,bstrace.exe
+PROCESS-NAME,crashpad_handler.exe
+PROCESS-NAME,crosvm.exe
+PROCESS-NAME,gpu_memory_check.exe
+PROCESS-NAME,gpu_check.exe
+PROCESS-NAME,InstallHypervisor.exe
+PROCESS-NAME,nvapi.exe
+PROCESS-NAME,PlayPackageManager.exe
+PROCESS-NAME,Service.exe
+PROCESS-NAME,vulkaninfo.exe
+PROCESS-NAME,zucchini.exe
+# Play 商店
+PROCESS-NAME,com.android.vending
+# Google Play 服务
+PROCESS-NAME,com.google.android.gms
+# Play Games
+PROCESS-NAME,com.google.android.play.games
+# 鬼怪世界
+PROCESS-NAME,DKBI_Launcher.exe
+PROCESS-NAME,Square.exe
+PROCESS-NAME,Square_Indicator.exe
+PROCESS-NAME,dokkaebi.exe
+PROCESS-NAME,ucldr_DKBI_GL_loader_x64.exe
+PROCESS-NAME,UnityCrashHandler64.exe
+# 安卓包
+PROCESS-NAME,com.kakaogames.dokkaebi
+
+### Steam
+PROCESS-NAME,gameoverlayui.exe
+PROCESS-NAME,gameoverlayui64.exe
+PROCESS-NAME,steam.exe
+PROCESS-NAME,steamerrorreporter.exe
+PROCESS-NAME,steamerrorreporter64.exe
+PROCESS-NAME,steamsysinfo.exe
+PROCESS-NAME,streaming_client.exe
+PROCESS-NAME,uninstall.exe
+PROCESS-NAME,WriteMiniDump.exe
+PROCESS-NAME,drivers.exe
+PROCESS-NAME,fossilize-replay.exe
+PROCESS-NAME,fossilize-replay64.exe
+PROCESS-NAME,gldriverquery.exe
+PROCESS-NAME,gldriverquery64.exe
+PROCESS-NAME,secure_desktop_capture.exe
+PROCESS-NAME,SteamService.exe
+PROCESS-NAME,steamxboxutil.exe
+PROCESS-NAME,steamxboxutil64.exe
+PROCESS-NAME,steam_monitor.exe
+PROCESS-NAME,vulkandriverquery.exe
+PROCESS-NAME,vulkandriverquery64.exe
+PROCESS-NAME,x64launcher.exe
+PROCESS-NAME,x86launcher.exe
+PROCESS-NAME,steamwebhelper.exe
+PROCESS-NAME,hardwareupdater.exe
+# 三角洲国际服
+PROCESS-NAME,DeltaForceClient.exe
+PROCESS-NAME,DeltaForceClient-Win64-Shipping.exe
+PROCESS-NAME,icafe_iigw_handler.exe
+PROCESS-NAME,INTLWebViewHelper.exe
+PROCESS-NAME,ACE-Service64.exe
+PROCESS-NAME,ACE-Setup64.exe
+PROCESS-NAME,SGuard64.exe
+PROCESS-NAME,SGuardSvc64.exe
+PROCESS-NAME,SGuardUpdate64.exe
+PROCESS-NAME,Uninstall64.exe
+PROCESS-NAME,MetaperfCapturer.exe
+PROCESS-NAME,dumpbin.exe
+PROCESS-NAME,Link.exe
+PROCESS-NAME,SymCacheGen.exe
+PROCESS-NAME,SymChk.exe
+PROCESS-NAME,WevtUtil.exe
+PROCESS-NAME,XPerf.exe
+PROCESS-NAME,DeltaForceClient-Win64-Shipping.exe_crashsight_data_db
+PROCESS-NAME,UnrealCEFSubProcess.exe
+PROCESS-NAME,UE4PrereqSetup_x64.exe
+PROCESS-NAME,Assistant.exe
+PROCESS-NAME,df_launcher_global.exe
+PROCESS-NAME,install_helper.exe
+PROCESS-NAME,startup_runner.exe
+PROCESS-NAME,uninst.exe
+PROCESS-NAME,VersionService.exe
+PROCESS-NAME,DXSETUP.exe
+PROCESS-NAME,vcredist_x64.exe
+PROCESS-NAME,VC_redist.x64.exe
+PROCESS-NAME,INTLTools.exe
+PROCESS-NAME,service.exe
+PROCESS-NAME,tbs_browser.exe
+PROCESS-NAME,elevated_tracing_service.exe
+PROCESS-NAME,msedgewebview2.exe
+PROCESS-NAME,notification_helper.exe
+PROCESS-NAME,service.exe_crashsight_data_db
