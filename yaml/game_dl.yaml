@@ -1,44 +1,65 @@
 payload:
-  # 游戏下载 CDN (直连提速)
-  - '+.bilai.me'
-  - '+.bilaix.com'
-  # purple
-  - '+.gs-purple-inst.download.ncupdate.com'
-  # AION2
-  - '+.a2kr.ncupdate.com'
-  # 天堂1怀旧
-  - '+.l1ckr.ncupdate.com'
-  # 王权与自由
-  - '+.tl.ncupdate.com'
-  # AION1
-  - '+.aionclive.ncupdate.com'
-  - '+.aionkor.ncupdate.com'
-  # 天堂W
-  - '+.mgs-lw.ncupdate.com'
-  # 天堂2M
-  - '+.mkr-l2m-win.ncupdate.com'
-  # 天堂M
-  - '+.mkr-linm.ncupdate.com'
-  # 天堂2
-  - '+.l2kor.ncupdate.com'
-  # 天堂1
-  - '+.l1kor.ncupdate.com'
-  - '+.l1kortest.ncupdate.com'
-  # 剑灵2
-  - '+.mgs-b2.ncupdate.com'
-  # NC下载兜底
-  #- '+.ncupdate.com'
+  # =========================================
+  # NCSoft / PURPLE平台下载 (永恒之塔、天堂系列等)
+  # =========================================
+  - '+.a2kr.ncupdate.com'                    # 永恒之塔2 (AION 2)
+  - '+.aionclive.ncupdate.com'               # 永恒之塔怀旧服 (AION Classic)
+  - '+.aionkor.ncupdate.com'                 # 永恒之塔韩服正式服
+  - '+.gs-purple-inst.download.ncupdate.com' # PURPLE 平台安装包下载
+  - '+.gs-purple.download.ncupdate.com'      # PURPLE 平台更新分发
+  - '+.l1ckr.ncupdate.com'                   # 天堂1怀旧服
+  - '+.l1kor.ncupdate.com'                   # 天堂1韩服
+  - '+.l1kortest.ncupdate.com'               # 天堂1测试服
+  - '+.l2kor.ncupdate.com'                   # 天堂2韩服
+  - '+.mgs-b2.ncupdate.com'                  # 剑灵2 (Mobile Game Studio)
+  - '+.mgs-lw.ncupdate.com'                  # 天堂W (Mobile Game Studio)
+  - '+.mkr-l2m-win.ncupdate.com'             # 天堂2M (PC版)
+  - '+.mkr-linm.ncupdate.com'                # 天堂M
+  - '+.tl.ncupdate.com'                      # 王权与自由 (Throne and Liberty)
 
-  # Netmarble CDN
-  # SLO
-  - '+.sgimage.netmarble.com'
-  - '+.sol.gcdn.netmarble.com'
-  # 日蚀 觉醒
-  - '+.eclipsepc-dl.game.onstove.com'
-  - '+.eclipse-live-down.game.playstove.com'
+  # =========================================
+  # Smilegate / Stove平台下载 (命运方舟等)
+  # =========================================
+  - '+.eclipse-live-down.game.playstove.com' # Stove 客户端及游戏下载
+  - '+.eclipsepc-dl.game.onstove.com'        # Stove PC端下载节点
 
-  # # 真人验证域名
-  # # Cloudflare 人机验证与挑战页面
-  # - '+.challenges.cloudflare.com'
-  # # 亚马逊CDN
-  # - '+.cloudfront.net'
+  # =========================================
+  # Steam 平台下载 
+  # =========================================
+  - '+.cdn.fastly.steamstatic.com'           # Steam 静态资源与下载
+  - '+.steamcontent.com'                     # Steam 核心游戏下载内容库
+
+  # =========================================
+  # Kakao Games 平台下载 (奥丁、上古世纪等)
+  # =========================================
+  - '+.patch.dkbi.kakaogames.com'            # Kakao Games 补丁下载
+  - '+.square.pcpf.kakaogames.com'           # Kakao PC平台客户端组件
+
+  # =========================================
+  # Netmarble (网石) 下载
+  # =========================================
+  - '+.sgimage.netmarble.com'                # 网石游戏静态资源
+  - '+.sol.gcdn.netmarble.com'               # 我独自升级(Solo Leveling)等分发
+
+  # =========================================
+  # Google 官方组件与应用分发
+  # =========================================
+  - '+.dl.google.com'                        # Google 官方下载
+  - '+.edgedl.me.gvt1.com'                   # Google 视频及应用底层分发网络
+
+  # =========================================
+  # 腾讯全球 / WeGame / 三角洲行动
+  # =========================================
+  - '+.download.dgameglobal.com'             # Level Infinite (腾讯海外分发)
+  - '+.wegame.com.api.aicn.plus'             # WeGame 相关API接口
+  - '+.wegame.com.sub.aicn.plus'             # WeGame 相关订阅/分发
+  - '+.www.playdeltaforce.com'               # 三角洲行动官网下载
+
+  # =========================================
+  # 杂项工具 / 测速验证 / 软件下载
+  # =========================================
+  - '+.bilai.me'                             # 辅助/代理相关
+  - '+.bilaix.com'                           # 辅助/代理相关
+  - '+.myip.ipip.net'                        # IPIP.net IP地址与网络检测
+  - '+.www.qualcomm.cn'                      # 高通中国官网
+  - '+.www.teamviewer.cn'                    # TeamViewer 远控中国官网下载
