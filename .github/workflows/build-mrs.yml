@@ -1,0 +1,55 @@
+name: Build MRS Rules
+
+on:
+  push:
+    paths:
+      - 'yaml/*.yaml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Mihomo
+        run: |
+          # 自动请求 Github API 获取 Mihomo 的最新稳定版 Tag
+          LATEST_TAG=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+          echo "已获取最新内核版本: $LATEST_TAG"
+          # 下载对应的最新版内核
+          wget -O mihomo.gz "https://github.com/MetaCubeX/mihomo/releases/download/${LATEST_TAG}/mihomo-linux-amd64-${LATEST_TAG}.gz"
+          gzip -d mihomo.gz
+          chmod +x mihomo
+          sudo mv mihomo /usr/local/bin/
+
+      - name: Compile YAML to MRS
+        run: |
+          echo "开始转换规则..."
+          for file in yaml/*.yaml; do
+            if [ -f "$file" ]; then
+              filename=$(basename "$file" .yaml)
+              echo "正在编译: $filename.yaml -> $filename.mrs"
+              
+              # ⚠️ 核心审查提示：
+              # 如果你的 yaml 里写的是 payload: 加 '+.google.com'，就用 domain
+              # 如果你的 yaml 里写的是 payload: 加 'DOMAIN-SUFFIX,google.com'，请把下面的 domain 改成 classic
+              mihomo convert-ruleset domain yaml "$file" "$filename.mrs"
+            fi
+          done
+
+      - name: Commit and Push MRS files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add *.mrs
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto compile MRS rules [skip ci]"
+            git push
+          else
+            echo "规则无变化，跳过提交。"
+          fi
