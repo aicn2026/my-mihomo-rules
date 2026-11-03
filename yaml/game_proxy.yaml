@@ -1,47 +1,82 @@
 payload:
-  # NCSoft (AION 2, 剑灵, 天堂系列)
-  - '+.nc.com'
-  - '+.plaync.com'
-  - '+.ncsoft.com'
-  - '+.playnccdn.com'
-  - '+.game.ncupdate.com'
-  - '+.gs-purple.ncupdate.com'
-  - '+.up4svr.ncupdate.com'
-  - '+.mobile.ncupdate.com'
-  - '+.live-upsvr.ncupdate.com'
-  - '+.global-mobile.ncupdate.com'
-  - '+.gs-purple.download.ncupdate.com'
-  
-  # 其他韩国游戏与平台
-  # Nexon
-  - '+.nexon.com'
-  # Kakao
-  - '+.kakaogames.com'
-  # Wemade (娱美德)
-  - '+.wemade.com'
-  # Netmarble (网石)
-  - '+.netmarble.net'
-  # 宙斯
-  - '+.com2us.com'
-  - '+.qpyou.cn'
-  # 日蚀
-  - '+.cloudfront.net'
-  - '+.81plug.com'
-  - '+.amplitude.com'
-  - '+.ifconfig.me'
-  - '+.api.ipify.org'
-  - '+.gum.criteo.com'
-  - '+.criteo.com'
-  - '+.criteo.net'
-  - '+.voisetech.com'
-  - '+.admaster.cc'
-  - '+.sginfra.net'
-  - '+.opera.com'
-  - '+.adkernel.com'
-  - '+.naver.com'
-  - '+.pstatic.net'
-  - '+.addthis.com'
-  - '+.innovid.com'
-  - '+.blismedia.com'
-  - '+.mookie1.com'
-  - '+.onstove.com'
+  # =========================================
+  # NCSoft (永恒之塔2、天堂系列、剑灵等)
+  # =========================================
+  - '+.nc.com'               # NCSoft 综合业务
+  - '+.ncsoft.com'           # NCSoft 官网
+  - '+.ncupdate.com'         # NCSoft 游戏更新分发
+  - '+.plaync.com'           # PlayNC 游戏门户 (账号登录/社区)
+  - '+.playnccdn.com'        # PlayNC 静态资源与图片
+
+  # =========================================
+  # Kakao Games / Daum 体系 (奥丁、上古世纪等)
+  # =========================================
+  - '+.daum.net'             # Daum 韩国综合门户 (常用于联合登录)
+  - '+.daumcdn.net'          # Daum 静态内容分发
+  - '+.kakao.com'            # Kakao 主站及社交API
+  - '+.kakaocdn.net'         # Kakao 静态资源分发
+  - '+.kakaogames.com'       # Kakao Games 游戏官网与接口
+
+  # =========================================
+  # Smilegate / Stove (命运方舟、第七史诗等)
+  # =========================================
+  - '+.onstove.com'          # Stove 游戏平台
+  - '+.playstove.com'        # Stove 游戏下载与分发
+  - '+.sginfra.net'          # Smilegate 核心基础设施与网络
+
+  # =========================================
+  # 其他韩国本土游戏大厂 (Nexon, Netmarble, Wemade等)
+  # =========================================
+  - '+.com2us.com'           # Com2uS (魔灵召唤等)
+  - '+.hangame.com'          # Hangame 游戏门户
+  - '+.netmarble.net'        # Netmarble (网石游戏，如我独自升级)
+  - '+.nexon.com'            # Nexon (DNF, 冒险岛等)
+  - '+.qpyou.cn'             # Com2uS/Hive 平台相关数据统计/分发
+  - '+.wemade.com'           # Wemade (娱美德，传奇4、夜鸦等)
+
+  # =========================================
+  # 韩国本土服务、综合门户与支付网关 (维持原生韩国IP环境)
+  # =========================================
+  - '+.kakaopay.com'         # KakaoPay 韩国本土支付网关
+  - '+.kakaopaycdn.com'      # KakaoPay 静态资源
+  - '+.naver.com'            # Naver 韩国第一大门户 (极为重要的登录与社区入口)
+  - '+.payco.com'            # Payco 韩国常用支付与积分网关
+  - '+.pstatic.net'          # Naver 及相关韩国站点的静态组件池
+  - '+.toss.im'              # Toss 韩国移动支付/金融应用
+
+  # =========================================
+  # 腾讯 / WeGame 体系
+  # =========================================
+  - '+.aicn.plus'            # WeGame / 腾讯游戏相关底层网络
+
+  # =========================================
+  # 华为云与基础设施 (部分韩国节点、CDN或云验证)
+  # =========================================
+  - '+.huawei.com'           # 华为官网与基础验证
+  - '+.huaweicloud.com'      # 华为云服务
+  - '+.myhuaweicloud.com'    # 华为云对象存储/CDN
+
+  # =========================================
+  # IP 查询、防泄漏与网络检测组件 (确保检测到的是韩国IP)
+  # =========================================
+  - '+.api.ipify.org'        # ipify IP 查询 API
+  - '+.browserleaks.com'     # 浏览器指纹与 WebRTC 泄漏测试
+  - '+.get.geojs.io'         # GeoJS 地理位置与 IP 库
+  - '+.ifconfig.me'          # IP 地址查看
+  - '+.ip-api.com'           # IP-API 地理位置接口
+  - '+.ip.sb'                # IP.sb IP 与路由查询
+  - '+.ip138.com'            # 国内常用 IP 查询
+  - '+.ipdata.co'            # IP 数据情报服务
+  - '+.ipinfo.io'            # IPinfo 地理与 ASN 查询
+  - '+.ipip.net'             # IPIP.net (高精度 IP 库测速与验证)
+  - '+.ipleak.net'           # IPLeak 综合防漏测试
+  - '+.ippure.com'           # 纯净度检测 / 欺诈值检测
+  - '+.ping0.cc'             # 常用 IP 欺诈值和连通性测试
+  - '+.whoer.net'            # Whoer 伪装度与网络检测环境
+
+  # =========================================
+  # 杂项 / 开发者社区 / 通讯
+  # =========================================
+  - '+.81plug.com'           # 代理测速/验证相关平台组件
+  - '+.ayugram.one'          # AyuGram (防撤回/特殊版 Telegram 客户端)
+  - '+.nodeseek.com'         # NodeSeek 主机与代理技术交流论坛
