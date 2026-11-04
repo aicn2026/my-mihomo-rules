@@ -164,3 +164,13 @@ PROCESS-NAME,elevated_tracing_service.exe
 PROCESS-NAME,msedgewebview2.exe
 PROCESS-NAME,notification_helper.exe
 PROCESS-NAME,service.exe_crashsight_data_db
+# PUBG
+PROCESS-NAME,UnrealCEFSubProcess_3071.exe
+PROCESS-NAME,BroCrashReporter.exe
+PROCESS-NAME,WinMTR.exe
+PROCESS-NAME,ExecPubg.exe
+PROCESS-NAME,TslGame.exe
+PROCESS-NAME,TslGame_BE.exe
+PROCESS-NAME,TslGame_ZK.exe
+PROCESS-NAME,BEService_x64.exe
+PROCESS-NAME,iigw_server.exe
