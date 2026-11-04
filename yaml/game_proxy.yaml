@@ -26,6 +26,7 @@ payload:
   - '+.browserleaks.com'
   - '+.ippure.com'
   - '+.ip.net.coffee'
+  - '+.iplark.com'
   # 韩国通用门户 (Naver)
   - '+.naver.com'
   - '+.pstatic.net'
