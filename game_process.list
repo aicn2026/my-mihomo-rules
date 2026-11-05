@@ -181,3 +181,9 @@ PROCESS-NAME,BlizzardError.exe
 PROCESS-NAME,GameSessionMonitor.exe
 PROCESS-NAME,battlenet.overlay.runtime.exe
 PROCESS-NAME,BlizzardBrowser.exe
+# 魔兽无限
+PROCESS-NAME,World of Warcraft Launcher.exe
+PROCESS-NAME,BlizzardError.exe
+PROCESS-NAME,Wow.exe
+PROCESS-NAME,BlizzardBrowser.exe
+PROCESS-NAME,WowVoiceProxy.exe
