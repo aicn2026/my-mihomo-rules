@@ -174,3 +174,10 @@ PROCESS-NAME,TslGame_BE.exe
 PROCESS-NAME,TslGame_ZK.exe
 PROCESS-NAME,BEService_x64.exe
 PROCESS-NAME,iigw_server.exe
+# 战网国际服
+PROCESS-NAME,Battle.net Launcher.exe
+PROCESS-NAME,Battle.net.exe
+PROCESS-NAME,BlizzardError.exe
+PROCESS-NAME,GameSessionMonitor.exe
+PROCESS-NAME,battlenet.overlay.runtime.exe
+PROCESS-NAME,BlizzardBrowser.exe
