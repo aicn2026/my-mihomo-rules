@@ -7,6 +7,7 @@ payload:
   - '+.myhuaweicloud.com'
   - '+.nodeseek.com'
   - '+.cloudflare.com'
+  - '+.cloudflareinsights.com'
   - '+.hostcenter.co.kr'
 
   # DNS泄露与网络检测
