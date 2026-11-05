@@ -27,6 +27,9 @@ payload:
   - '+.ippure.com'
   - '+.ip.net.coffee'
   - '+.iplark.com'
+  # DNS泄露检测
+  - '+.browserleaks.org'
+  - '+.api.123169.xyz'
   # 韩国通用门户 (Naver)
   - '+.naver.com'
   - '+.pstatic.net'
