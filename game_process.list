@@ -101,32 +101,6 @@ PROCESS-NAME,UnityCrashHandler64.exe
 # 安卓包
 PROCESS-NAME,com.kakaogames.dokkaebi
 
-### Steam
-PROCESS-NAME,gameoverlayui.exe
-PROCESS-NAME,gameoverlayui64.exe
-PROCESS-NAME,steam.exe
-PROCESS-NAME,steamerrorreporter.exe
-PROCESS-NAME,steamerrorreporter64.exe
-PROCESS-NAME,steamsysinfo.exe
-PROCESS-NAME,streaming_client.exe
-PROCESS-NAME,uninstall.exe
-PROCESS-NAME,WriteMiniDump.exe
-PROCESS-NAME,drivers.exe
-PROCESS-NAME,fossilize-replay.exe
-PROCESS-NAME,fossilize-replay64.exe
-PROCESS-NAME,gldriverquery.exe
-PROCESS-NAME,gldriverquery64.exe
-PROCESS-NAME,secure_desktop_capture.exe
-PROCESS-NAME,SteamService.exe
-PROCESS-NAME,steamxboxutil.exe
-PROCESS-NAME,steamxboxutil64.exe
-PROCESS-NAME,steam_monitor.exe
-PROCESS-NAME,vulkandriverquery.exe
-PROCESS-NAME,vulkandriverquery64.exe
-PROCESS-NAME,x64launcher.exe
-PROCESS-NAME,x86launcher.exe
-PROCESS-NAME,steamwebhelper.exe
-PROCESS-NAME,hardwareupdater.exe
 # 三角洲国际服
 PROCESS-NAME,DeltaForceClient.exe
 PROCESS-NAME,DeltaForceClient-Win64-Shipping.exe
