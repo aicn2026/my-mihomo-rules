@@ -45,6 +45,9 @@ payload:
   - '+.eclipsepc-dl.game.onstove.com'
   - '+.eclipse-live-down.game.playstove.com'
 
+  # 巨商
+  - '+.ak-gersangkr.xcache.kinxcdn.com'
+
   # GooglePlayGames PC
   - '+.dl.google.com'
   - '+.edgedl.me.gvt1.com'
