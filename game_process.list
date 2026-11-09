@@ -69,6 +69,11 @@ PROCESS-NAME,nexon_runtime.exe
 PROCESS-NAME,Uninstall.exe
 PROCESS-NAME,nexon_agent.exe
 PROCESS-NAME,nexon_client.exe
+# 冒险岛
+PROCESS-NAME,CrashReportClient.exe
+PROCESS-NAME,MapleStory.exe
+PROCESS-NAME,NGService.exe
+PROCESS-NAME,DwarfAxe.exe
 
 # Google Play 游戏
 PROCESS-NAME,Applicator.26.10.90.0.exe
