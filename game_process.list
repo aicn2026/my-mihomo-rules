@@ -108,6 +108,12 @@ PROCESS-NAME,UnityCrashHandler64.exe
 # 安卓包
 PROCESS-NAME,com.kakaogames.dokkaebi
 
+# AKInteractive 巨商
+PROCESS-NAME,AutopatchUpdater.exe
+PROCESS-NAME,Gersang.exe
+PROCESS-NAME,Run.exe
+PROCESS-NAME,encodewave.exe
+
 # 三角洲国际服
 PROCESS-NAME,DeltaForceClient.exe
 PROCESS-NAME,DeltaForceClient-Win64-Shipping.exe

@@ -51,7 +51,7 @@ payload:
   - '+.nxl.nxfs.nexon.com'
 
   # 巨商
-  - '+.ak-gersangkr.xcache.kinxcdn.com'
+  # - '+.ak-gersangkr.xcache.kinxcdn.com'
 
   # GooglePlayGames PC
   - '+.dl.google.com'
