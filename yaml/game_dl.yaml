@@ -49,6 +49,7 @@ payload:
   # 冒险岛
   - '+.download.nxfs.nexon.com'
   - '+.nxl.nxfs.nexon.com'
+  - '+.download2.nexon.net'
 
   # 巨商
   # - '+.ak-gersangkr.xcache.kinxcdn.com'
