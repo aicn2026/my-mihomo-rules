@@ -45,6 +45,11 @@ payload:
   - '+.eclipsepc-dl.game.onstove.com'
   - '+.eclipse-live-down.game.playstove.com'
 
+  # Nexon
+  # 冒险岛
+  - '+.download.nxfs.nexon.com'
+  - '+.nxl.nxfs.nexon.com'
+
   # 巨商
   - '+.ak-gersangkr.xcache.kinxcdn.com'
 

@@ -63,6 +63,13 @@ PROCESS-NAME,EclipseTheAwakening.exe
 PROCESS-NAME,EclipseTheAwakening-Win64-Shipping.exe
 PROCESS-NAME,vc_redist.arm64.exe
 
+# Nexon
+PROCESS-NAME,nexon_launcher.exe
+PROCESS-NAME,nexon_runtime.exe
+PROCESS-NAME,Uninstall.exe
+PROCESS-NAME,nexon_agent.exe
+PROCESS-NAME,nexon_client.exe
+
 # Google Play 游戏
 PROCESS-NAME,Applicator.26.10.90.0.exe
 PROCESS-NAME,Applicator.26.9.813.1.exe
