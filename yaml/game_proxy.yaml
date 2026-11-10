@@ -8,6 +8,7 @@ payload:
   - '+.nodeseek.com'
   - '+.cloudflare.com'
   - '+.hostcenter.co.kr'
+  - '+.landcloud.cfd'
 
   # DNS泄露与网络检测
   - '+.123169.xyz'
