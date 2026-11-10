@@ -74,6 +74,9 @@ PROCESS-NAME,CrashReportClient.exe
 PROCESS-NAME,MapleStory.exe
 PROCESS-NAME,NGService.exe
 PROCESS-NAME,DwarfAxe.exe
+PROCESS-NAME,grap-core64.aes
+PROCESS-NAME,grap-communicator64.aes
+PROCESS-NAME,grap-updater.aes
 
 # Google Play 游戏
 PROCESS-NAME,Applicator.26.10.90.0.exe
