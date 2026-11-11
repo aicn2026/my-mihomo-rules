@@ -62,6 +62,11 @@ payload:
   - '+.ncsoft.com'
   - '+.playnccdn.com'
   - '+.ncupdate.com'
+  # 天堂特工脚本
+  - '+.merseine.com'
+  - '+.igcps.com'
+  - '+.gmagent.net'
+  - '+.lc-upload.bclivfzor.workers.dev'
   
   # 其他韩国游戏与平台
   # Nexon
