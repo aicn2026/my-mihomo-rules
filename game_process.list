@@ -31,6 +31,7 @@ PROCESS-NAME,aioncefprocess.exe
 PROCESS-NAME,Aion.bin
 # 天堂1怀旧服
 PROCESS-NAME,LC.exe
+PROCESS-NAME,LineCall.exe
 # 天堂2
 PROCESS-NAME,LineageII.exe
 PROCESS-NAME,AwesomiumProcess.exe
