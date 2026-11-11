@@ -33,6 +33,7 @@ PROCESS-NAME,Aion.bin
 PROCESS-NAME,LC.exe
 PROCESS-NAME,LineCall.exe
 PROCESS-NAME,regedit.exe
+PROCESS-NAME,notepad.exe
 # 天堂2
 PROCESS-NAME,LineageII.exe
 PROCESS-NAME,AwesomiumProcess.exe
