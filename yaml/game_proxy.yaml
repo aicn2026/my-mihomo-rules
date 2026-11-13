@@ -47,6 +47,7 @@ payload:
   - '+.proxypurity.com'
   - '+.surfsharkdns.com'
   - '+.whoer.net'
+  - '+.qifu.baidu.com'
   # 韩国通用门户 (Naver)
   - '+.naver.com'
   - '+.pstatic.net'
