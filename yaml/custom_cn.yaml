@@ -1,6 +1,8 @@
 payload:
   # 自定义直连域名
-  #- '+.gh-proxy.org'
+  - '+.gh-proxy.org'
+  - '+.cdn.jsdmirror.com'
+  - '+.cdn.jsdmirror.cn'
   #- '+.aicn.plus'
   #- '+.631518.xyz'
   # 显卡驱动与硬件服务
