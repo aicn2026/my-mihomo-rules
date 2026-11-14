@@ -1,6 +1,6 @@
 payload:
   # 自定义直连域名
-  - '+.gh-proxy.org'
+  #- '+.gh-proxy.org'
   #- '+.aicn.plus'
   #- '+.631518.xyz'
   # 显卡驱动与硬件服务
