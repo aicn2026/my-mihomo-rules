@@ -185,3 +185,7 @@ PROCESS-NAME,BlizzardError.exe
 PROCESS-NAME,Wow.exe
 PROCESS-NAME,BlizzardBrowser.exe
 PROCESS-NAME,WowVoiceProxy.exe
+# Bloxstrap&roblox
+PROCESS-NAME,Bloxstrap.exe
+PROCESS-NAME,RobloxCrashHandler.exe
+PROCESS-NAME,RobloxPlayerBeta.exe
