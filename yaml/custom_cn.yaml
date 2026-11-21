@@ -3,6 +3,8 @@ payload:
   - '+.gh-proxy.org'
   - '+.cdn.jsdmirror.com'
   - '+.cdn.jsdmirror.cn'
+  - '+.ghproxy.com'
+  - '+.oracle.com'
   #- '+.aicn.plus'
   #- '+.631518.xyz'
   # 显卡驱动与硬件服务

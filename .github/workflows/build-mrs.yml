@@ -34,15 +34,11 @@ jobs:
             if [ -f "$file" ]; then
               filename=$(basename "$file" .yaml)
               echo "正在编译: $filename.yaml -> $filename.mrs"
-              
-              # ⚠️ 核心审查提示：
-              # 如果你的 yaml 里写的是 payload: 加 '+.google.com'，就用 domain
-              # 如果你的 yaml 里写的是 payload: 加 'DOMAIN-SUFFIX,google.com'，请把下面的 domain 改成 classic
               mihomo convert-ruleset domain yaml "$file" "$filename.mrs"
             fi
           done
 
-      - name: Commit and Push MRS files
+      - name: Commit, Push and Purge JSDMirror Cache
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -50,6 +46,16 @@ jobs:
           if ! git diff --staged --quiet; then
             git commit -m "Auto compile MRS rules [skip ci]"
             git push
+            echo "规则已更新，等待 5 秒后自动清理 JSDMirror CDN 缓存..."
+            sleep 5
+            for mrs_file in *.mrs; do
+              echo "正在刷新缓存: $mrs_file"
+              curl -s -X POST "https://cache.jsdmirror.com/api/v1/purge" \
+                -H "Content-Type: application/json" \
+                -H "X-API-Key: ${{ secrets.JSD_API_KEY }}" \
+                -d "{\"url\": \"https://cdn.jsdmirror.com/gh/aicn2026/my-mihomo-rules@main/${mrs_file}\", \"method\": \"invalidate\"}"
+              echo ""
+            done
           else
-            echo "规则无变化，跳过提交。"
+            echo "规则无变化，跳过提交与缓存清理。"
           fi
