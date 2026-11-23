@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'yaml/*.yaml'
+      - '*.list'
   workflow_dispatch:
 
 jobs:
@@ -15,6 +16,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Setup Mihomo
         run: |
@@ -41,21 +44,29 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add *.mrs
-          CHANGED_FILES=$(git diff --staged --name-only)
-          if [ -n "$CHANGED_FILES" ]; then
-            echo "检测到以下规则文件已更新: $CHANGED_FILES"
+          CHANGED_MRS=$(git diff --staged --name-only)
+          CHANGED_LIST=$(git diff --name-only HEAD~1 HEAD -- '*.list' 2>/dev/null || true)
+
+          if [ -n "$CHANGED_MRS" ]; then
             git commit -m "Auto compile MRS rules [skip ci]"
             git push
+          fi
+
+          ALL_CHANGED="$CHANGED_MRS $CHANGED_LIST"
+          ALL_CHANGED=$(echo "$ALL_CHANGED" | xargs)
+
+          if [ -n "$ALL_CHANGED" ]; then
+            echo "检测到以下规则文件已更新: $ALL_CHANGED"
             echo "等待 10 秒确保 GitHub 源站同步完成..."
             sleep 10
-            for mrs_file in $CHANGED_FILES; do
-              echo "正在清理缓存: $mrs_file"
+            for target_file in $ALL_CHANGED; do
+              echo "正在清理缓存: $target_file"
               curl -s -X POST "https://cache.jsdmirror.com/api/v1/purge" \
                 -H "Content-Type: application/json" \
                 -H "X-API-Key: ${{ secrets.JSD_API_KEY }}" \
-                -d "{\"url\": \"https://cdn.jsdmirror.com/gh/aicn2026/my-mihomo-rules@main/${mrs_file}\", \"method\": \"invalidate\"}"
+                -d "{\"url\": \"https://cdn.jsdmirror.com/gh/aicn2026/my-mihomo-rules@main/${target_file}\", \"method\": \"invalidate\"}"
               echo ""
             done
           else
-            echo "规则无变化，跳过提交与缓存清理。"
+            echo "规则无变化，跳过缓存清理。"
           fi
