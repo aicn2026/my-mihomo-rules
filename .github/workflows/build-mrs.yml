@@ -75,10 +75,10 @@ jobs:
 
               while [ $ATTEMPT -le $MAX_RETRIES ]; do
                 echo "[$COUNT/$TOTAL] 正在清理缓存: $target_file (第 $ATTEMPT 次尝试)"
-                RESP=$(curl -s -X POST "https://cache.jsdmirror.com/api/v1/purge" \
+                RESP=$(curl -sS --max-time 30 -X POST "https://cache.jsdmirror.com/api/v1/purge" \
                   -H "Content-Type: application/json" \
                   -H "X-API-Key: ${{ secrets.JSD_API_KEY }}" \
-                  -d "{\"url\": \"https://cdn.jsdmirror.com/gh/aicn2026/my-mihomo-rules@main/${target_file}\", \"method\": \"invalidate\"}")
+                  -d "{\"url\": \"https://cdn.jsdmirror.com/gh/aicn2026/my-mihomo-rules@main/${target_file}\", \"method\": \"invalidate\"}" 2>&1 || true)
                 echo "$RESP"
 
                 if echo "$RESP" | grep -q '"success":true'; then
