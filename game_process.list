@@ -21,7 +21,6 @@ PROCESS-NAME,CrashReportClientEditor.exe
 PROCESS-NAME,EpicWebHelper.exe
 PROCESS-NAME,Aion2.exe
 # Aion重制版
-PROCESS-NAME,AwesomiumProcess.exe
 PROCESS-NAME,ncdiagS32.exe
 PROCESS-NAME,ncdiagS64.exe
 PROCESS-NAME,SendLogClient.exe
@@ -46,7 +45,6 @@ PROCESS-NAME,aegisty.bin
 
 ### STOVE 平台
 PROCESS-NAME,7za.exe
-PROCESS-NAME,crashpad_handler.exe
 PROCESS-NAME,CrashSender1402_vs140.exe
 PROCESS-NAME,GameUninstaller.exe
 PROCESS-NAME,MicrosoftEdgeWebview2Setup.exe
@@ -69,17 +67,23 @@ PROCESS-NAME,vc_redist.arm64.exe
 # Nexon
 PROCESS-NAME,nexon_launcher.exe
 PROCESS-NAME,nexon_runtime.exe
-PROCESS-NAME,Uninstall.exe
 PROCESS-NAME,nexon_agent.exe
 PROCESS-NAME,nexon_client.exe
 # 冒险岛
-PROCESS-NAME,CrashReportClient.exe
 PROCESS-NAME,MapleStory.exe
 PROCESS-NAME,NGService.exe
 PROCESS-NAME,DwarfAxe.exe
 PROCESS-NAME,grap-core64.aes
 PROCESS-NAME,grap-communicator64.aes
 PROCESS-NAME,grap-updater.aes
+# 装备仔
+PROCESS-NAME,NexonLink.exe
+PROCESS-NAME,NexonPlug.exe
+PROCESS-NAME,NGM64.exe
+PROCESS-NAME,TemppalOvergeared.exe
+PROCESS-NAME,vc_redist.x64.exe
+PROCESS-NAME,Temppal-Win64-Shipping.exe
+PROCESS-NAME,NXPEpicWebHelper.exe
 
 # Google Play 游戏
 PROCESS-NAME,Applicator.26.10.90.0.exe
@@ -93,7 +97,6 @@ PROCESS-NAME,GooglePlayGamesServicesUninstaller.exe
 PROCESS-NAME,GooglePlayGamesServicesInstaller.exe
 PROCESS-NAME,client.exe
 PROCESS-NAME,bstrace.exe
-PROCESS-NAME,crashpad_handler.exe
 PROCESS-NAME,crosvm.exe
 PROCESS-NAME,gpu_memory_check.exe
 PROCESS-NAME,gpu_check.exe
@@ -154,7 +157,6 @@ PROCESS-NAME,uninst.exe
 PROCESS-NAME,VersionService.exe
 PROCESS-NAME,DXSETUP.exe
 PROCESS-NAME,vcredist_x64.exe
-PROCESS-NAME,VC_redist.x64.exe
 PROCESS-NAME,INTLTools.exe
 PROCESS-NAME,service.exe
 PROCESS-NAME,tbs_browser.exe
@@ -181,9 +183,7 @@ PROCESS-NAME,battlenet.overlay.runtime.exe
 PROCESS-NAME,BlizzardBrowser.exe
 # 魔兽无限
 PROCESS-NAME,World of Warcraft Launcher.exe
-PROCESS-NAME,BlizzardError.exe
 PROCESS-NAME,Wow.exe
-PROCESS-NAME,BlizzardBrowser.exe
 PROCESS-NAME,WowVoiceProxy.exe
 # Bloxstrap & roblox
 PROCESS-NAME,Bloxstrap.exe
