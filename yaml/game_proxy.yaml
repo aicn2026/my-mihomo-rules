@@ -9,6 +9,7 @@ payload:
   - '+.cloudflare.com'
   - '+.hostcenter.co.kr'
   - '+.landcloud.cfd'
+  - '+.amazon.com'
   - '+.aws.sb'
 
   # DNS泄露与网络检测

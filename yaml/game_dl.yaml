@@ -50,7 +50,9 @@ payload:
   - '+.download.nxfs.nexon.com'
   - '+.nxl.nxfs.nexon.com'
   - '+.download2.nexon.net'
-
+  # 装备仔
+  - '+.platform.nexon.com'
+  - '+.temppal-pc.dn.nexoncdn.co.kr'
   # 巨商
   # - '+.ak-gersangkr.xcache.kinxcdn.com'
 
@@ -58,9 +60,6 @@ payload:
   - '+.dl.google.com'
   - '+.edgedl.me.gvt1.com'
   # kakao 鬼怪世界
-  # - '+.rr4---sn-3u-bh2sl.gvt1.com'
-  # - '+.rr4---sn-oguelnzz.gvt1.com'
-  # - '+.rr1---sn-oguesn6r.gvt1.com'
   - '+.square.pcpf.kakaogames.com'
   - '+.patch.dkbi.kakaogames.com'
   # Steam
