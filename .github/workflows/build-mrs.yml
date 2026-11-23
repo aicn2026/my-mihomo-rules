@@ -64,14 +64,45 @@ jobs:
             echo "检测到以下规则文件已更新: $ALL_CHANGED"
             echo "等待 10 秒确保 GitHub 源站同步完成..."
             sleep 10
-            for target_file in $ALL_CHANGED; do
-              echo "正在清理缓存: $target_file"
-              curl -s -X POST "https://cache.jsdmirror.com/api/v1/purge" \
-                -H "Content-Type: application/json" \
-                -H "X-API-Key: ${{ secrets.JSD_API_KEY }}" \
-                -d "{\"url\": \"https://cdn.jsdmirror.com/gh/aicn2026/my-mihomo-rules@main/${target_file}\", \"method\": \"invalidate\"}"
-              echo ""
-              sleep 2
+            FILES=($ALL_CHANGED)
+            TOTAL=${#FILES[@]}
+            COUNT=0
+            for target_file in "${FILES[@]}"; do
+              COUNT=$((COUNT + 1))
+              MAX_RETRIES=3
+              ATTEMPT=1
+              SUCCESS=false
+
+              while [ $ATTEMPT -le $MAX_RETRIES ]; do
+                echo "[$COUNT/$TOTAL] 正在清理缓存: $target_file (第 $ATTEMPT 次尝试)"
+                RESP=$(curl -s -X POST "https://cache.jsdmirror.com/api/v1/purge" \
+                  -H "Content-Type: application/json" \
+                  -H "X-API-Key: ${{ secrets.JSD_API_KEY }}" \
+                  -d "{\"url\": \"https://cdn.jsdmirror.com/gh/aicn2026/my-mihomo-rules@main/${target_file}\", \"method\": \"invalidate\"}")
+                echo "$RESP"
+
+                if echo "$RESP" | grep -q '"success":true'; then
+                  SUCCESS=true
+                  break
+                else
+                  if [ $ATTEMPT -lt $MAX_RETRIES ]; then
+                    echo "清理失败或触发限流，等待 35 秒后重试..."
+                    sleep 35
+                  fi
+                fi
+                ATTEMPT=$((ATTEMPT + 1))
+              done
+
+              if [ "$SUCCESS" = false ]; then
+                echo "⚠️ 警告: $target_file 连续 $MAX_RETRIES 次清理失败，请稍后手动检查。"
+              fi
+
+              if [ $((COUNT % 2)) -eq 0 ] && [ "$COUNT" -lt "$TOTAL" ]; then
+                echo "已达每分钟 2 次频率限制，等待 65 秒后继续清理剩余文件..."
+                sleep 65
+              elif [ "$COUNT" -lt "$TOTAL" ]; then
+                sleep 2
+              fi
             done
           else
             echo "规则无变化，跳过缓存清理。"
