@@ -3,6 +3,8 @@ PROCESS-NAME,PurpleLauncher.exe
 PROCESS-NAME,Uninstall.exe
 PROCESS-NAME,CefSharp.BrowserSubprocess.exe
 PROCESS-NAME,Purple.exe
+PROCESS-NAME,snapshot_blob.bin
+PROCESS-NAME,v8_context_snapshot.bin
 PROCESS-NAME,purple-agent.exe
 PROCESS-NAME,MediaRecorder.exe
 PROCESS-NAME,MediaRecorder2.exe
@@ -14,20 +16,29 @@ PROCESS-NAME,PurpleBox.exe
 PROCESS-NAME,purpleonp.exe
 PROCESS-NAME,logReport_SA.exe
 PROCESS-NAME,purpleon.exe
+
 # Aion2
+PROCESS-NAME,Aion2.exe
+PROCESS-NAME,EpicWebHelper.exe
 PROCESS-NAME,UEPrereqSetup_x64.exe
 PROCESS-NAME,CrashReportClient.exe
 PROCESS-NAME,CrashReportClientEditor.exe
-PROCESS-NAME,EpicWebHelper.exe
-PROCESS-NAME,Aion2.exe
 # Aion重制版
+ROCESS-NAME,aegisty64.bin
+PROCESS-NAME,Aion.bin
+PROCESS-NAME,GameGuard.des
 PROCESS-NAME,ncdiagS32.exe
 PROCESS-NAME,ncdiagS64.exe
 PROCESS-NAME,SendLogClient.exe
+PROCESS-NAME,aioncefprocess.exe
+PROCESS-NAME,natives_blob.bin
+PROCESS-NAME,aegisty.bin
+PROCESS-NAME,AION.bin
+PROCESS-NAME,AwesomiumProcess.exe
+PROCESS-NAME,iovation.bin
 PROCESS-NAME,AionCefProcess.exe
 PROCESS-NAME,wow_helper.exe
-PROCESS-NAME,aioncefprocess.exe
-PROCESS-NAME,Aion.bin
+PROCESS-NAME,aegisty64.bin
 # 天堂1怀旧服
 PROCESS-NAME,LC.exe
 PROCESS-NAME,LineCall.exe
@@ -35,13 +46,14 @@ PROCESS-NAME,regedit.exe
 PROCESS-NAME,notepad.exe
 # 天堂2
 PROCESS-NAME,LineageII.exe
-PROCESS-NAME,AwesomiumProcess.exe
 PROCESS-NAME,awesomium_process.exe
-PROCESS-NAME,L2CefSubProcess.exe
-PROCESS-NAME,L2CrashSender.exe
-PROCESS-NAME,nclauncher.exe
 PROCESS-NAME,l2.bin
-PROCESS-NAME,aegisty.bin
+PROCESS-NAME,L2CefSubProcess.exe
+PROCESS-NAME,L2CompiledShader.bin
+PROCESS-NAME,L2CrashSender.exe
+PROCESS-NAME,L2PreCompiledShader.bin
+PROCESS-NAME,nclauncher.exe
+PROCESS-NAME,Predefinedshader.bin
 
 ### STOVE 平台
 PROCESS-NAME,7za.exe
