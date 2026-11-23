@@ -201,3 +201,5 @@ PROCESS-NAME,WowVoiceProxy.exe
 PROCESS-NAME,Bloxstrap.exe
 PROCESS-NAME,RobloxCrashHandler.exe
 PROCESS-NAME,RobloxPlayerBeta.exe
+
+PROCESS-NAME,nxDownload2.exe
