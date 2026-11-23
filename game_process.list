@@ -76,7 +76,6 @@ PROCESS-NAME,DwarfAxe.exe
 PROCESS-NAME,grap-core64.aes
 PROCESS-NAME,grap-communicator64.aes
 PROCESS-NAME,grap-updater.aes
-
 # 装备仔
 PROCESS-NAME,NexonLink.exe
 PROCESS-NAME,NexonPlug.exe

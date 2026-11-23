@@ -17,11 +17,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - name: Setup Mihomo
         run: |
-          LATEST_TAG=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+          LATEST_TAG=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
           echo "已获取最新内核版本: $LATEST_TAG"
           wget -O mihomo.gz "https://github.com/MetaCubeX/mihomo/releases/download/${LATEST_TAG}/mihomo-linux-amd64-${LATEST_TAG}.gz"
           gzip -d mihomo.gz
@@ -45,15 +45,20 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add *.mrs
           CHANGED_MRS=$(git diff --staged --name-only)
-          CHANGED_LIST=$(git diff --name-only HEAD~1 HEAD -- '*.list' 2>/dev/null || true)
+
+          BEFORE_SHA="${{ github.event.before }}"
+          if [ -n "$BEFORE_SHA" ] && [ "$BEFORE_SHA" != "0000000000000000000000000000000000000000" ]; then
+            CHANGED_LIST=$(git diff --name-only "$BEFORE_SHA" "${{ github.sha }}" -- '*.list' 2>/dev/null || true)
+          else
+            CHANGED_LIST=$(git diff --name-only HEAD~1 HEAD -- '*.list' 2>/dev/null || true)
+          fi
 
           if [ -n "$CHANGED_MRS" ]; then
             git commit -m "Auto compile MRS rules [skip ci]"
             git push
           fi
 
-          ALL_CHANGED="$CHANGED_MRS $CHANGED_LIST"
-          ALL_CHANGED=$(echo "$ALL_CHANGED" | xargs)
+          ALL_CHANGED=$(echo "$CHANGED_MRS $CHANGED_LIST" | tr ' ' '\n' | sort -u | xargs)
 
           if [ -n "$ALL_CHANGED" ]; then
             echo "检测到以下规则文件已更新: $ALL_CHANGED"
@@ -66,6 +71,7 @@ jobs:
                 -H "X-API-Key: ${{ secrets.JSD_API_KEY }}" \
                 -d "{\"url\": \"https://cdn.jsdmirror.com/gh/aicn2026/my-mihomo-rules@main/${target_file}\", \"method\": \"invalidate\"}"
               echo ""
+              sleep 2
             done
           else
             echo "规则无变化，跳过缓存清理。"

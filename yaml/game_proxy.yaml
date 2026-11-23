@@ -77,7 +77,6 @@ payload:
   - '+.nexon.io'
   - '+.nexon.net'
   - '+.nexoncdn.co.kr'
-  
   # Hangame
   - '+.hangame.com'
   # Kakao
