@@ -49,4 +49,3 @@ payload:
   # - '+.challenges.cloudflare.com'
   # # 亚马逊CDN
   # - '+.cloudfront.net'
-  - '+.test.cc'
