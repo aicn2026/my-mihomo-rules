@@ -1,0 +1,9 @@
+payload:
+  # GooglePlayGames PC
+  # - '+.dl.google.com'
+  - '+.gvt1.com'
+  - '+.gvt2.com'
+  - '+.gvt3.com'
+  # Hangame
+  - '+.reactor.cdn.toastoven.net'
+  - '+.poker.down.hangame.com'
