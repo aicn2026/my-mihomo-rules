@@ -53,6 +53,7 @@ payload:
   # 装备仔
   # - '+.platform.nexon.com'
   - '+.temppal-pc.dn.nexoncdn.co.kr'
+  - '+.assets-nxplug.nexon.com'
   # 巨商
   # - '+.ak-gersangkr.xcache.kinxcdn.com'
 
