@@ -96,6 +96,7 @@ PROCESS-NAME,TemppalOvergeared.exe
 PROCESS-NAME,vc_redist.x64.exe
 PROCESS-NAME,Temppal-Win64-Shipping.exe
 PROCESS-NAME,NXPEpicWebHelper.exe
+PROCESS-NAME,Install_NexonPlug.exe
 
 # Google Play 游戏
 PROCESS-NAME,Applicator.26.10.90.0.exe
