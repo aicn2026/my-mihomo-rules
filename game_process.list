@@ -224,3 +224,7 @@ PROCESS-NAME,HPHelper.exe
 PROCESS-NAME,HPHelper_35.exe
 PROCESS-NAME,IPCTest.exe
 PROCESS-NAME,IPCTest_35.exe
+PROCESS-NAME,hanstarter2.exe
+PROCESS-NAME,HanStarter2Uninstaller.exe
+PROCESS-NAME,hanstarter2update.exe
+PROCESS-NAME,OutBound_Hul.exe
