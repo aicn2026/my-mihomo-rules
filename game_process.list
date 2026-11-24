@@ -201,3 +201,26 @@ PROCESS-NAME,WowVoiceProxy.exe
 PROCESS-NAME,Bloxstrap.exe
 PROCESS-NAME,RobloxCrashHandler.exe
 PROCESS-NAME,RobloxPlayerBeta.exe
+# Hangame
+PROCESS-NAME,GameGuard.des
+PROCESS-NAME,HangamePoker.exe
+PROCESS-NAME,UnityCrashHandler32.exe
+PROCESS-NAME,GameMon.des
+PROCESS-NAME,GameMon64.des
+PROCESS-NAME,ggerror.des
+PROCESS-NAME,ggscan.des
+PROCESS-NAME,npggNT.des
+PROCESS-NAME,npggNT64.des
+PROCESS-NAME,npgmup.des
+PROCESS-NAME,nplsm.des
+PROCESS-NAME,npsc.des
+PROCESS-NAME,npsc64.des
+PROCESS-NAME,natives_blob.bin
+PROCESS-NAME,nhncefprocess.exe
+PROCESS-NAME,snapshot_blob.bin
+PROCESS-NAME,v8_context_snapshot.bin
+PROCESS-NAME,BZCefPopupApp.exe
+PROCESS-NAME,HPHelper.exe
+PROCESS-NAME,HPHelper_35.exe
+PROCESS-NAME,IPCTest.exe
+PROCESS-NAME,IPCTest_35.exe
