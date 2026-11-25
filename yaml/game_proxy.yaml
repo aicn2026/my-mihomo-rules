@@ -79,10 +79,10 @@ payload:
   - '+.nexoncdn.co.kr'
   # Hangame
   - '+.hangame.com'
+  - '+.toastoven.net'
   - 'accounts.hangame.com'
   - 'hanstarter2ui.hangame.com'
   - 'poker.down.hangame.com'
-  - '+.toastoven.net'
   - 'reactor.cdn.toastoven.net'
   - '+.nhncloudservice.com'
   - 'api-logncrash.nhncloudservice.com'
