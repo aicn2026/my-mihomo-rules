@@ -79,6 +79,7 @@ payload:
   - '+.nexoncdn.co.kr'
   # Hangame
   - '+.hangame.com'
+  - '+.toastoven.net'
   # Kakao
   - '+.kakaogames.com'
   - '+.kakao.com'
