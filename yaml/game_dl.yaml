@@ -42,6 +42,7 @@ payload:
   - '+.sgimage.netmarble.com'
   - '+.sol.gcdn.netmarble.com'
   # 日蚀 觉醒
+  - '+.dl.onstove.com'
   - '+.eclipsepc-dl.game.onstove.com'
   - '+.eclipse-live-down.game.playstove.com'
 
