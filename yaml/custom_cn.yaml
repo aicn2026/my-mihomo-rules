@@ -5,6 +5,8 @@ payload:
   - '+.cdn.jsdmirror.cn'
   - '+.ghproxy.com'
   - '+.oracle.com'
+  - '+.oraclecloud.com'
+  - '+.oracleinfinity.io'
   #- '+.aicn.plus'
   #- '+.631518.xyz'
   # 显卡驱动与硬件服务
